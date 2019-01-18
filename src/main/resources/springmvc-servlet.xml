@@ -41,10 +41,8 @@
 	</mvc:annotation-driven>
 	
 	<!--<mvc:resources location="/statics/" mapping="/statics/**"></mvc:resources>-->
-	<mvc:resources mapping="/statics/img/**" location="/statics/img/" />
-	<mvc:resources mapping="/statics/js/**" location="/statics/js/" />
-	<mvc:resources mapping="/statics/css/**" location="/statics/css/" />
-	<mvc:resources mapping="/statics/fonts/**" location="/statics/fonts/" />
+	<mvc:resources mapping="/statics/**" location="/statics/" />
+
 
 	<!-- 配置多视图解析器：允许同样的内容数据呈现不同的view -->
 	<bean class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
